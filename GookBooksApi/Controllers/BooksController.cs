@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using GookBooksApi.Domain;
-using GookBooksApi.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 
 namespace GookBooksApi.Controllers
@@ -38,7 +37,7 @@ namespace GookBooksApi.Controllers
         }
 
         // POST: api/books
-        [HttpPost("add")]
+        [HttpPost]
         public Book PostBook([FromBody] Book book)
         {
            return new Book
