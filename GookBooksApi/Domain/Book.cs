@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using GookBooksApi.Interfaces;
+using System.ComponentModel.DataAnnotations;
 
 namespace GookBooksApi.Domain
 {
@@ -14,9 +14,13 @@ namespace GookBooksApi.Domain
         }
 
         public Guid Id { get; set; }
+
+        [MinLength(5)]
         public string Title { get; set; }
         public BookAuthor Author { get; set; }
         public int Rate { get; set; }
+
+        [MinLength(5)]
         public string Description { get; set; }
         public List<string> Quotes { get; set; }
     }

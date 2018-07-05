@@ -1,8 +1,6 @@
-﻿using GookBooksApi.Interfaces;
-
-namespace GookBooksApi.Domain
+﻿namespace GookBooksApi.Domain
 {
-    public class BookAuthor: IBookAuthor
+    public class BookAuthor
     {
         public string FirstName { get; set; }
         public string LastName { get; set; }
